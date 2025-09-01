@@ -1,0 +1,21 @@
+Estou desenvolvendo uma aplicação backend em C# para um cliente do setor financeiro.
+Tenho a seguinte classe PagamentoService, que conecta ao MongoDB:
+
+public class PagamentoService
+{
+    private readonly string connectionString =
+    "mongodb://usuario:senha@host:27017/ClienteFinanceiroDB";
+
+    public bool ProcessarPagamento(decimal valor, string cpfCliente)
+    {
+        if (valor > 10000)
+        {
+            throw new Exception("Limite excedido");
+        }
+        // TODO: lógica para salvar no MongoDB
+        return true;
+    }
+}
+Preciso de ajuda para:Implementar a lógica correta para salvar a transação no MongoDB.
+Tratar erros de forma mais segura, usando boas práticas de exceções.
+Melhorar a forma de lidar com a string de conexão .
