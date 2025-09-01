@@ -18,4 +18,4 @@ public class PagamentoService
 }
 Preciso de ajuda para:Implementar a lógica correta para salvar a transação no MongoDB.
 Tratar erros de forma mais segura, usando boas práticas de exceções.
-Melhorar a forma de lidar com a string de conexão .
+Melhorar a forma de lidar com a string de conexão . ...
